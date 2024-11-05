@@ -1,0 +1,83 @@
+/* Container styling for the login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+}
+
+/* Vastra-View heading style */
+/* Vastra-View heading style */
+.login-container .page-title {
+    font-size: 48px; /* Large font size */
+    font-weight: bold;
+    color: #ffffff; /* White color for Vastra-View */
+    margin: 0; /* Reset margin */
+    margin-top: -140px; /* Move it upwards (negative value) */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+
+/* Login header styling */
+.login-container h1 {
+    font-size: 32px; /* Font size for Login */
+    font-weight: 500;
+    color: orange; /* Orange color for Login */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+/* Input fields styling for login */
+.login-container input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px; /* Fixed width */
+    padding: 14px;
+    margin: 12px 0; /* Space between inputs */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+/* Input focus styling */
+.login-container input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #0077b6; /* Blue border on focus */
+}
+
+/* Button styling for login */
+.login-container .action-button {
+    
+    width: 320px; /* Same width as input fields */
+    padding: 14px;
+    border: 2px solid white; /* White border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #0077b6; /* Blue background */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    font-weight: 600;
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 20px; 
+    margin-left:16px;/* Space above button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effect */
+.login-container .action-button:hover {
+    background-color: #005f8d; /* Darker blue on hover */
+}
+
+/* Optional error message styling */
+.error-message {
+    color: red; /* Red for error messages */
+    margin-top: 15px; /* Space above */
+    font-size: 14px; /* Font size for error */
+}

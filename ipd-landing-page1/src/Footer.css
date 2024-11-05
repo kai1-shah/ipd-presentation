@@ -1,0 +1,44 @@
+/* Footer.css */
+/* Footer.css */
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Rest of the CSS remains the same */
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.testimonial .author {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+}

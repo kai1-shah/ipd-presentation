@@ -1,0 +1,163 @@
+/* App.css */
+body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Calibri', sans-serif; /* Set Calibri as the main font */
+    background-color: #111; /* Darker blackish background color */
+    color: #ffffff; /* White text color */
+    display: flex; /* Use flexbox to create a column layout */
+    flex-direction: column; /* Stack items vertically */
+    min-height: 100vh; /* Ensure the app takes up the full viewport height */
+}
+
+.container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add some padding */
+    flex-grow: 1; /* Allow the container to grow and push the footer down */
+}
+
+.left-section {
+    display: flex; /* Use flexbox for left section */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 40px; /* Space between text and image */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+}
+h1 {
+    color: #ff8c00;
+    font-size: 90px; /* Increase the font size */
+    margin: 25px 170px 5px; /* Add space above and below */
+    animation: bounce 2s infinite; /* Apply bounce animation */
+}
+
+h2 {
+    font-size: 40px; /* Increase the font size */
+    margin: 20px 95px 10px; /* Add space above and below */
+    animation: slideIn 3s ease-out infinite; /* Apply infinite slide-in animation */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Original position */
+    }
+    40% {
+        transform: translateY(-10px); /* Move up */
+    }
+    60% {
+        transform: translateY(-5px); /* Move slightly up */
+    }
+}
+
+
+.button-container {
+    display: flex; /* Use flexbox to align buttons */
+    gap: 60px; /* Space between buttons */
+    margin-top: 40px;
+    margin-left: 600px; 
+    margin-right:1px/* Adjust spacing above buttons */
+}
+
+.action-button {
+    padding: 12px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    background-color:#ff8c00; /* Orange background */
+    color: black; /* Black text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin:10px 90px 30 px;
+}
+
+.action-button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
+
+.image {
+    margin: 0px 0px 100px;
+    margin-left: 60px; /* Increase space to move the image more to the right */
+    width: 50%; /* Set the width to 60% */
+    max-width: 350px; /* Set a maximum width for the image */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+}
+
+.image img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+/* App.css */
+
+/* General styles for login and signup containers */
+.login-container, .signup-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: calc(100vh - 60px); /* Full height minus header height */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px; /* Add some padding */
+}
+
+/* Styling for headings */
+.login-container h1, .signup-container h1 {
+    font-size: 36px; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Styles for form inputs */
+.login-container input, .signup-container input {
+    width: 300px; /* Fixed width for inputs */
+    padding: 12px; /* Padding inside the inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 2px solid #fff; /* White border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+/* Change border color on focus */
+.login-container input:focus, .signup-container input:focus {
+    outline: none; /* Remove default outline */
+    border: 2px solid #0077b6; /* Change border color on focus */
+}
+
+/* Button styles for login and signup */
+.login-container .action-button, .signup-container .action-button {
+    padding: 12px 20px; /* Padding inside the button */
+    border: 2px solid white; /* White border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #0077b6; /* Blue background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change background color on hover */
+.login-container .action-button:hover, .signup-container .action-button:hover {
+    background-color: #005f8d; /* Darker blue on hover */
+}
+
+/* Optional: Styling for error messages */
+.error-message {
+    color: red; /* Red color for error messages */
+    margin-top: 10px; /* Space above the error message */
+}

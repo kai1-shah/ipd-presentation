@@ -1,0 +1,45 @@
+/* Header.css */
+.header {
+  background-color: #111; /* Black background color */
+  padding: 10px; /* Padding around the header */
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Vertically center the items */
+}
+
+.logo {
+  height: 40px; /* Set a height for the logo */
+  margin-right: auto; /* Push the logo to the left */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove bullet points */
+  display: flex; /* Align items in a row */
+  padding: 0; /* Remove default padding */
+  margin-right: 20px; /* Add some spacing between links and dropdown icon */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+  font-size: 18px; /* Increase font size */
+  padding: 10px; /* Add some padding to the links */
+  border-radius: 13%; /* Set border radius to 50% for circular effect */
+  background-color: transparent; /* Set initial background color to transparent */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.nav-links a:hover {
+  background-color: #012f60; /* Blue background color on hover */
+}
+
+.dropdown-icon {
+  color: #ffffff; /* White color for the dropdown icon */
+  font-size: 24px; /* Increase the size of the dropdown icon */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+}
